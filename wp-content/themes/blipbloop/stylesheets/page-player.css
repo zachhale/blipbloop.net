@@ -1,0 +1,111 @@
+#main #content ul.playlist {
+  list-style-type: none;
+  margin: 1em 0 0 0;
+  padding: .25em .25em 0 .25em;
+  background-color: #cfe0b7;
+  border: 1px solid #555;
+  overflow: hidden; }
+  #main #content ul.playlist li {
+    position: relative;
+    display: block;
+    width: auto;
+    font-size: 1.2em;
+    line-height: 1em;
+    padding: .25em;
+    margin: 0 0 .25em 0;
+    border: none;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    #main #content ul.playlist li a {
+      display: block;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1em;
+      color: #333;
+      position: relative;
+      outline: none;
+      z-index: 2;
+      padding: 1px 0 0 20px;
+      background-image: url('../images/soft-play-transparent-light.png');
+      background-position: 0 1px;
+      background-repeat: no-repeat; }
+    #main #content ul.playlist li.sm2_playing {
+      color: #555;
+      background-color: #cfe0b7; }
+      #main #content ul.playlist li.sm2_playing:hover a.sm2_link {
+        color: #555; }
+      #main #content ul.playlist li.sm2_playing .controls {
+        position: relative;
+        display: block; }
+      #main #content ul.playlist li.sm2_playing a.sm2_link {
+        margin-right: 4.5em;
+        background-image: url('../images/soft-pause-transparent-light.png'); }
+      #main #content ul.playlist li.sm2_playing .timing {
+        display: block; }
+    #main #content ul.playlist li:hover {
+      background-color: #becfa6; }
+      #main #content ul.playlist li:hover .controls .statusbar {
+        position: relative;
+        cursor: pointer; }
+      #main #content ul.playlist li:hover .timing {
+        z-index: 2; }
+    #main #content ul.playlist li.sm2_paused {
+      background-color: #cfe0b7; }
+      #main #content ul.playlist li.sm2_paused:hover a.sm2_link {
+        color: #555; }
+      #main #content ul.playlist li.sm2_paused .controls {
+        background-color: #666; }
+        #main #content ul.playlist li.sm2_paused .controls .statusbar {
+          background-color: #ccc; }
+          #main #content ul.playlist li.sm2_paused .controls .statusbar .position {
+            background-color: #666;
+            border-color: #666; }
+      #main #content ul.playlist li.sm2_paused .timing {
+        background-color: #888;
+        border: 1px solid #ccc; }
+        #main #content ul.playlist li.sm2_paused .timing .sm2_position {
+          text-decoration: blink; }
+      #main #content ul.playlist li.sm2_paused a.sm2_link .metadata {
+        display: inline; }
+    #main #content ul.playlist li .controls {
+      display: none;
+      position: relative;
+      margin-top: 0.25em;
+      padding-left: 20px; }
+      #main #content ul.playlist li .controls .statusbar {
+        position: relative;
+        height: 0.5em;
+        background-color: #999;
+        overflow: hidden; }
+        #main #content ul.playlist li .controls .statusbar .position {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          height: 0.5em;
+          background-color: #333;
+          width: 0px; }
+        #main #content ul.playlist li .controls .statusbar .loading {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: .5em;
+          background-color: #777; }
+    #main #content ul.playlist li .timing {
+      position: absolute;
+      display: none;
+      text-align: right;
+      right: .4em;
+      top: .5em;
+      width: auto;
+      font: 80% normal "lucida console",monaco,courier,terminal,system; }
+      #main #content ul.playlist li .timing div.sm2_timing {
+        margin: 0;
+        padding: 0; }
+    #main #content ul.playlist li .sm2_divider {
+      font-size: 0.75em; }
+    #main #content ul.playlist li .sm2_metadata {
+      font-size: 0.65em; }
+
+#control-template {
+  display: none; }

@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>  2008  March - Blip Bloop</title>
+	<meta name="generator" content="WordPress 3.4.2" />
+	<meta name="robots" content="all" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/main.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/page-player.css" media="screen" />
+  <link rel="alternate" type="application/atom+xml" title="Everything Feed" href="http://feeds.feedburner.com/blipbloop" />
+  <link rel="alternate" type="application/atom+xml" title="Just Mixtapes Feed"  href="http://feeds.feedburner.com/blipbloop/mixtapes" />
+	<link rel="pingback" href="/xmlrpc.php" />
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/soundmanager2.js" type="text/javascript"></script>
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/page-player.js" type="text/javascript"></script>
+		<link rel='archives' title='December 2012' href='/2012/12/' />
+	<link rel='archives' title='November 2011' href='/2011/11/' />
+	<link rel='archives' title='March 2011' href='/2011/03/' />
+	<link rel='archives' title='October 2009' href='/2009/10/' />
+	<link rel='archives' title='July 2009' href='/2009/07/' />
+	<link rel='archives' title='October 2008' href='/2008/10/' />
+	<link rel='archives' title='April 2008' href='/2008/04/' />
+	<link rel='archives' title='March 2008' href='/2008/03/' />
+	<link rel='archives' title='February 2008' href='/2008/02/' />
+	<link rel='archives' title='January 2008' href='/2008/01/' />
+	<link rel='archives' title='December 2007' href='/2007/12/' />
+	<link rel='archives' title='November 2007' href='/2007/11/' />
+	<link rel='archives' title='October 2007' href='/2007/10/' />
+	<link rel='archives' title='September 2007' href='/2007/09/' />
+	<link rel='archives' title='June 2007' href='/2007/06/' />
+	<link rel='archives' title='May 2007' href='/2007/05/' />
+	<link rel='archives' title='April 2007' href='/2007/04/' />
+	<link rel='archives' title='March 2007' href='/2007/03/' />
+	<link rel='archives' title='February 2007' href='/2007/02/' />
+	<link rel='archives' title='September 2006' href='/2006/09/' />
+	<link rel='archives' title='August 2006' href='/2006/08/' />
+	<link rel='archives' title='May 2006' href='/2006/05/' />
+	<link rel='archives' title='April 2006' href='/2006/04/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.2" />
+</head>
+<body>
+<div class="omnomnom">
+<div class="wrap">
+	<div id="main">
+		<div id="header">
+      <p id="site_title"><a href="/">Blip Bloop</a></p>
+      <p id="site_desc">By Zach Hale</p>
+    </div>
+  
+    <div id="content">
+	
+
+
+			<p class="archivetitle">Archive for March, 2008</p>
+			
+	<div class="navigation navigationtop">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	
+  <div class="hfeed">
+      <div class="post post-102 hentry">
+      <h2 class="entry-title"><a href="/referrer-links-and-anonymity-in-private-web-spaces/" rel="bookmark">Referrer links and anonymity in private web spaces</a></h2>
+<div class="entrybody entry-content">
+  <p>Several times now I have revisited my current setup for personal information management and whether or not I am comfortable storing private personal hyperlinks on the web. My concern with using online services is that when I store hyperlinks on wikis, messages, emails, etc. and click, the other site will see me in their referrer logs.</p>
+
+<p>This isn&#8217;t an issue for most webmail services like Gmail because it is normal for these services to obfuscate urls beyond recognition making it impossible to identify any referrers. You see urls full of hashes and hard to recognize identifiers that are meaningless to anything but the application itself. I doubt keeping urls unidentifiable like that was a <em>primary</em> concern in the design of webmail systems but it does provide this obvious advantage.</p>
+
+<p>The concern I have is with services like Backpack, Basecamp, or any hosted blog or wiki where you have a unique and easily identifiable url associated with your data. On hosted sites like the aforementioned Backpack and Basecamp, your account is identified by a chosen subdomain which is <em>very likely</em> easily identifiable to you personally or to your company/organization. For example, Startup Weekend uses the domain &#8220;startupweekend.grouphub.com&#8221; &#8212; obviously identifiable. On a personal domain like say for example &#8220;zachhale.com&#8221; if I were to set up a private wiki at &#8220;wiki.zachhale.com&#8221; and do everything necessary to protect it with a robots.txt and require http authentication, if I put create a link and click on it referring to another site they will see where I came from. Even if your domain name isn&#8217;t identifiable by name to you, there is still whois information that can be dug up and tracked back to you.</p>
+
+<p>I&#8217;d rather not let people know what I&#8217;m doing in those private spaces. Maybe I have a list of blogs I admire and visit frequently or maybe it&#8217;s a corporate information system with links to competitors sites. In many cases I would rather not send information to those people identifying my visits with me or my company.</p>
+
+<p>There are a few solutions that I can easily see:</p>
+
+<ul>
+<li>obfuscate your urls and use a domain that can&#8217;t be tracked back to you, or</li>
+<li>use some sort of proxy that will spoof or remove any referrer information from your requests.</li>
+</ul>
+
+<p>Obfuscating completely is difficult to do and often nearly impossible to do, so the only other reasonable solution now is to set up some proxy. In researching it looks like there are <a href="http://en.wikipedia.org/wiki/Referer_spoofing">a number of client browser extensions/plugins</a> for spoofing referrers, but any client side hack is tedious to enforce, especially across a large organization or with multiple platforms in the mix. The other option is to manually redirect traffic through another domain, preferably not owned by you. I found one service called <a href="http://referhide.com/">referhide.com</a> that provides this solution. Otherwise, it wouldn&#8217;t be too hard to set up a redirection script either with javascript or through passing parameters through the url. Either way, though, you now have to either manually or programatically change all your links to go through that intermediary service &#8212; sounds like a pain.</p>
+
+<p>What I&#8217;d like to see is something similar to robots.txt but for referrer links. It would be impossible to enforce by strictly trusting web servers to do the ignoring since people could choose to ignore such a file without question. The only real solution I could see is standardizing this into web browsers so you could trust that anybody using a compatible web browser would know that their referrer traffic is being properly dealt with and anonymity is preserved.</p>
+
+<p>Any ideas? Am I missing something major here?</p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 29, 2008</abbr></li>
+    <li class="comments"><a href="/referrer-links-and-anonymity-in-private-web-spaces/#comments" title="Comment on Referrer links and anonymity in private web spaces">2 comments</a></li>
+    <li class="tags">Tagged <a href="/tags/anonymity/" rel="tag">anonymity</a> <a href="/tags/privacy/" rel="tag">privacy</a> <a href="/tags/referrer/" rel="tag">referrer</a> <a href="/tags/spoofing/" rel="tag">spoofing</a></li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-101 hentry">
+      <h2 class="entry-title"><a href="/post-graduation-plans/" rel="bookmark">Post-Graduation Plans</a></h2>
+<div class="entrybody entry-content">
+  <p>My degree audit officially shows all green &#8220;OK&#8221;s and the message &#8220;All requirements have been satisfied&#8221; appears at the top. Woohoo! It&#8217;s been a long journey and I&#8217;m finally done.</p>
+
+<p>And it feels <em>weird</em>.</p>
+
+<p>Part of it is because I have not sought any form of employment other than working full time on <a href="http://mavenry.com">my startup</a>, but I think most of what&#8217;s weird is that I feel like I can do anything now. I&#8217;ve felt like that for the last few years, but now it&#8217;s unconstrained by long-term academic requirements. Nothing is holding me back from pursuing whatever ambitions I want to and that feels very, <em>very</em> good.</p>
+
+<p>I still don&#8217;t have income as of now, though. I&#8217;ve had extensive conversations recently about this and about my lifeline being provided by my parents while I figure out how to get some income rolling in through my company and projects, and the pressure is really hitting hard. I&#8217;m a bit conflicted about how I will ground myself fully at this point. Do I diversify and hope something catches? Do I focus completely on the one most important future revenue generator? Do I stop for a short while, grab some projects for some income, then come back to everything? There&#8217;s no right answer to this so I&#8217;m sort of testing the waters if you will over the next couple of weeks.</p>
+
+<h3>What I&#8217;m working on now</h3>
+
+<p>We have been working on Mavenry for the longest time now and I have learned a ton about starting a business and how important it is to start with solid, accurate assumptions and to build from the needs of the customers. It&#8217;s been a tedious journey but I couldn&#8217;t imagine not having gone through everything we&#8217;ve gone through so far. I&#8217;ve even picked up the know how to build sales projections, financial models, business plans, neural brand identity maps, you name it. Anyways, this humongous learning process has swayed our direction back and forth and back and forth but we&#8217;ve been chugging on an incredibly solid direction for the last few months that should prove our efforts worthwhile in due time. I&#8217;m excited and passionate about the direction we&#8217;re heading &#8212; it&#8217;s all about staying focused and taking one step at a time.</p>
+
+<p>Towards the end of the quarter I threw up a simple (and full of bugs that need fixing) application <a href="http://glitchee.com">Glitchee</a> for sharing mp3s with each other in sort of a &#8220;running mixtape&#8221; idea. Now there are a few solid competitors that have literally launched within the last week and attack sort of similar issues with different approaches, but I&#8217;m still sure that what I envision is not solved by either of the new guys out there so I&#8217;ll keep on chugging as a side project. I don&#8217;t expect this project in how it&#8217;s designed to be any sort of income bringer but who knows, maybe it&#8217;ll fill out to be something worthwhile that people would jump on and use.</p>
+
+<p>And other than that, I&#8217;m building a website with mini CMS for my mom&#8217;s real estate presence as well as working on a store/gallery and mini order fulfillment system for my dad&#8217;s photography business.</p>
+
+<h3>Going through phases</h3>
+
+<p>It constantly astounds me how much my perspective on life, learning, relationships, projects, etc. changes so drastically and often these days. I&#8217;m at a point where my patience is extremely low for wasting time that could be spent <em>producing</em> something. While during school when I had a lot of forced projects and tasks to complete it seemed more reasonable to spend a great deal of time reading, learning, and running over and over plans for this and that, I&#8217;m at a point where all of that just seems like such a waste of time. I realize I only feel that way having already experienced that phase, but it&#8217;s weird to switch to an entirely different set of ambitions for what I spend my time on. I want to make things. I want to produce actual applications and products that can get out there. I&#8217;m tired of reading for hours on end about things that don&#8217;t produce results. I have a need for making things happen.</p>
+
+<h3>Git!</h3>
+
+<p>Now that I got all of that out of my system, I&#8217;m beginning to drink the cool aid and am moving my projects over to using <a href="http://git.or.cz/">Git</a> and specifically the new cool kid on the block <a href="http://github.com">github</a>.</p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 26, 2008</abbr></li>
+    <li class="comments"><a href="/post-graduation-plans/#comments" title="Comment on Post-Graduation Plans">1 comment</a></li>
+    <li class="tags">Tagged <a href="/tags/academics/" rel="tag">academics</a> <a href="/tags/git/" rel="tag">git</a> <a href="/tags/glitchee/" rel="tag">glitchee</a> <a href="/tags/mavenry/" rel="tag">mavenry</a></li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-100 hentry">
+      <h2 class="entry-title"><a href="/rainydawg-radio-season-3-show-10/" rel="bookmark">Rainydawg Radio, Season 3, Show 10 &#8211; LAST SHOW</a></h2>
+<div class="entrybody entry-content">
+  <p>This was my last show on Rainydawg. I pushed the limits a bit so I apologize if the beginning or end was cut off awkwardly. I will miss the station. Keep watching this space to find out what&#8217;s next.</p>
+
+<table class="playlist" border="0" cellspacing="0">
+<tbody>
+<tr class="head">
+<th></th>
+<th>Name</th>
+<th>Artist</th>
+<th>Album</th>
+</tr>
+<tr>
+<th>1</th>
+<td>Tepid Bile</td>
+<td>Tipper</td>
+<td>Tip Hop</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Lullabye/A Place In My Heart (Acapella)</td>
+<td>Morgan Geist/Erlend Oye</td>
+<td>DJ-Kicks: Erlend Oye</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Romantic</td>
+<td>Walter Meego</td>
+<td>Romantic</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Resurrection d&#8217;Une Idole Po</td>
+<td>Rinocerose</td>
+<td>Music Kills Me</td>
+</tr>
+<tr>
+<th>5</th>
+<td>Hyped-Up Plus Tax</td>
+<td>Dabrye</td>
+<td>One/Three</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Still Going Theme</td>
+<td>Still Going</td>
+<td></td>
+</tr>
+<tr>
+<th>7</th>
+<td>Over &amp; Over</td>
+<td>Hot Chip</td>
+<td>The Warning</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Ribbons</td>
+<td>Four Tet</td>
+<td>Ringer</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Wish</td>
+<td>Ellen Allien</td>
+<td>Berlinette</td>
+</tr>
+<tr>
+<th>10</th>
+<td>About Fun</td>
+<td>Psapp</td>
+<td>Tiger, My Friend</td>
+</tr>
+<tr>
+<th>11</th>
+<td>The Outer Banks</td>
+<td>The Album Leaf</td>
+<td>In A Safe Place</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Come Into My Kitchen</td>
+<td>Joakim</td>
+<td>Fantomes</td>
+</tr>
+<tr>
+<th>13</th>
+<td>One You Love</td>
+<td>Hail Social</td>
+<td>Modern Love and Death</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Birds of a Feather</td>
+<td>Herbert</td>
+<td>Scales</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Shine shine</td>
+<td>Boys Noize</td>
+<td>Oi Oi Oi</td>
+</tr>
+<tr>
+<th>16</th>
+<td>TTV</td>
+<td>Telefon Tel Aviv</td>
+<td>Farenheight Fair Enough</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Send Me Shivers</td>
+<td>Mouse On Mars</td>
+<td>Radical Connector</td>
+</tr>
+<tr>
+<th>18</th>
+<td>1,2 Step (DJ Weekend&#8217;s Robot vs. Kids Remix)</td>
+<td>Ciara</td>
+<td></td>
+</tr>
+<tr>
+<th>19</th>
+<td>Ants</td>
+<td>edIT</td>
+<td>Crying over Pros for No Reason</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Beautiful Life</td>
+<td>Gui Boratto</td>
+<td>Chromophobia</td>
+</tr>
+<tr>
+<th>21</th>
+<td>La Ritournelle</td>
+<td>Sebastien Tellier</td>
+<td>Politics</td>
+</tr>
+<tr>
+<th>22</th>
+<td>Poney Part 1</td>
+<td>Vitalic</td>
+<td>OK Cowboy</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Kelly</td>
+<td>Van She</td>
+<td>Van She</td>
+</tr>
+<tr>
+<th>24</th>
+<td>A Feeling of the All-Thing</td>
+<td>Kelly Polar</td>
+<td>I Need Y ou To Hold On While The Sky Is Falling</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Ce Matin-La</td>
+<td>Air</td>
+<td>Moon Safari</td>
+</tr>
+</tbody></table>
+
+<ul class="playlist">
+<li><a href="http://media.blipbloop.net/audio/radio-archives/2008-03-18-5pm.mp3">2008-03-18 5pm</a></li>
+<li><a href="http://media.blipbloop.net/audio/radio-archives/2008-03-18-6pm.mp3">2008-03-18 6pm</a></li>
+</ul>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 18, 2008</abbr></li>
+    <li class="comments"><a href="/rainydawg-radio-season-3-show-10/#respond" title="Comment on Rainydawg Radio, Season 3, Show 10 &#8211; LAST SHOW">0 comments</a></li>
+    <li class="tags">Tagged </li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-99 hentry">
+      <h2 class="entry-title"><a href="/rainydawg-radio-season-3-show-9/" rel="bookmark">Rainydawg Radio, Season 3, Show 9</a></h2>
+<div class="entrybody entry-content">
+  <table class="playlist" cellspacing="0">
+<tr class="head">
+<th></th>
+<th>Name</th>
+<th>Artist</th>
+<th>Album</th>
+</tr>
+<tr>
+<th>1</th>
+<td>Gouge Away</td>
+<td>The Pixies</td>
+<td></td>
+</tr>
+<tr>
+<th>2</th>
+<td>Wildcat (E*Vax Remix)</td>
+<td>Ratatat</td>
+<td></td>
+</tr>
+<tr>
+<th>3</th>
+<td>Ghost Hardware</td>
+<td>Burial</td>
+<td>Untrue</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Old School Scratchin&#8221;</td>
+<td>DJ QBert</td>
+<td></td>
+</tr>
+<tr>
+<th>5</th>
+<td>24</td>
+<td>Komori</td>
+<td></td>
+</tr>
+<tr>
+<th>6</th>
+<td>Better Off Alone</td>
+<td>Alice Deejay</td>
+<td>Who Needs Guitars Anyway?</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Remind Me</td>
+<td>Royksopp</td>
+<td></td>
+</tr>
+<tr>
+<th>8</th>
+<td>Hit The Bit (Lorenz Rhode Remix)</td>
+<td>Ben Mono featuring Yo Majesty</td>
+<td></td>
+</tr>
+<tr>
+<th>9</th>
+<td>Figured Me Out</td>
+<td>Jamie Lidell</td>
+<td>Jim</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Fidelity (Morgan Page Unreleased Remix)</td>
+<td>Regina Spektor</td>
+<td></td>
+</tr>
+<tr>
+<th>11</th>
+<td>Sow Into You</td>
+<td>Roisin Murphy</td>
+<td>Ruby Blue</td>
+</tr>
+<tr>
+<th>12</th>
+<td>grass grows greener</td>
+<td>pfadfinderei &#038; modeselektor</td>
+<td>labland</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Mandarine Girl</td>
+<td>Booka Shade</td>
+<td>Mandarine Girl EP</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Truck Driver</td>
+<td>Piero Umiliani</td>
+<td></td>
+</tr>
+<tr>
+<th>15</th>
+<td>He&#8217;s On The Phone</td>
+<td>Saint Etienne</td>
+<td></td>
+</tr>
+<tr>
+<th>16</th>
+<td>Creator</td>
+<td>Santogold</td>
+<td></td>
+</tr>
+<tr>
+<th>17</th>
+<td>Bandy Bandy</td>
+<td>Zap Mama</td>
+<td></td>
+</tr>
+<tr>
+<th>18</th>
+<td>Letrablaze</td>
+<td>Sebastian &#038; Oizo &#038; Tellier</td>
+<td></td>
+</tr>
+<tr>
+<th>19</th>
+<td>Beel</td>
+<td>Teenage Bad Girl</td>
+<td></td>
+</tr>
+<tr>
+<th>20</th>
+<td>Quiet Please</td>
+<td>Sascha Funke</td>
+<td></td>
+</tr>
+<tr>
+<th>21</th>
+<td>Feeling For You</td>
+<td>Cassius</td>
+<td>1999</td>
+</tr>
+<tr>
+<th>22</th>
+<td>She&#8217;s a Bad Mama Jama</td>
+<td>Carl Carlton</td>
+<td></td>
+</tr>
+<tr>
+<th>23</th>
+<td>Good Lies</td>
+<td>The Notwist</td>
+<td></td>
+</tr>
+</table>
+
+<ul class="playlist">
+<li><a href="http://media.blipbloop.net/audio/radio-archives/2008-03-11-5pm.mp3">2008-03-11 5pm</a></li>
+<li><a href="http://media.blipbloop.net/audio/radio-archives/2008-03-11-6pm.mp3">2008-03-11 6pm</a></li>
+</ul>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 11, 2008</abbr></li>
+    <li class="comments"><a href="/rainydawg-radio-season-3-show-9/#respond" title="Comment on Rainydawg Radio, Season 3, Show 9">0 comments</a></li>
+    <li class="tags">Tagged </li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-98 hentry">
+      <h2 class="entry-title"><a href="/glitchee/" rel="bookmark">Glitchee</a></h2>
+<div class="entrybody entry-content">
+  <p>I scratched an itch a few nights ago and wrote a simple webapp for sharing mp3s with your friends.</p>
+
+<p>Glitchee is a private social music file sharing application for people who like to discover new and interesting music that their friends are listening to.</p>
+
+<p>I present you, fresh off the line: <strong><a href="http://glitchee.com/">Glitchee</a></strong> (<a href="http://glitchee.com">glitchee.com</a>)</p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 11, 2008</abbr></li>
+    <li class="comments"><a href="/glitchee/#respond" title="Comment on Glitchee">0 comments</a></li>
+    <li class="tags">Tagged <a href="/tags/glitchee/" rel="tag">glitchee</a></li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-97 hentry">
+      <h2 class="entry-title"><a href="/home-stretch/" rel="bookmark">Home Stretch</a></h2>
+<div class="entrybody entry-content">
+  <p>10 days from now I will be completed with the last quarter of classes remaining in my undergraduate degree. It&#8217;s hard to really comprehend right now, but overall I&#8217;m <em>stoked</em>.</p>
+
+<p>Today marked my last class slide presentation (my final capstone project presentation) which, while it was overly text heavy, went relatively well. It was the last time I will have had had to present in front of class for school. Whoa.</p>
+
+<p>The college experience has been absolutely monumental so far and I&#8217;m really going to miss it. It is easy to take for granted the welcoming attitudes that come with being in school. My program, professors, advisors, and peers provide such a wonderfully comfortable safety net. Sometimes it gets overly stressful and sometimes it seems like assignments and exams are out to destroy me, but once they pass it&#8217;s is obvious that they really don&#8217;t matter in the grand scheme of things. I&#8217;m not forced to compete. The reason I&#8217;m here is to learn.</p>
+
+<p>That said, I&#8217;m stoked to be done. <a href="http://mavenry.com">Mavenry</a> is chugging away beautifully and I&#8217;m more than ready to dedicate myself to a life of entrepreneurship. I can&#8217;t wait to focus less on completely academic requirements to learning about what <em>I</em> want to learn about <em>when</em> I want to learn about it. I can&#8217;t wait to be completely responsible for my financial well being. I can&#8217;t wait to have complete control over my schedule and what I <em>choose</em> to spend my time with. I can&#8217;t wait to spend a week straight on my own projects without having to procrastinate on achieving relatively inflexible academic requirements.</p>
+
+<p>I still have a business plan to co-write, a culminating capstone report to write, a large capstone poster to finalize, and two rather difficult exams to prepare for for my human sexuality class. It&#8217;ll be a busy week and I&#8217;m ready. Here I go.</p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 7, 2008</abbr></li>
+    <li class="comments"><a href="/home-stretch/#respond" title="Comment on Home Stretch">0 comments</a></li>
+    <li class="tags">Tagged <a href="/tags/capstone/" rel="tag">capstone</a> <a href="/tags/mavenry/" rel="tag">mavenry</a> <a href="/tags/school/" rel="tag">school</a></li>
+  </ul>
+</div>
+    </div>
+      <div class="post post-96 hentry">
+      <h2 class="entry-title"><a href="/rainydawg-radio-season-3-show-8/" rel="bookmark">Rainydawg Radio, Season 3, Show 8</a></h2>
+<div class="entrybody entry-content">
+  <table class="playlist" cellspacing="0">
+<tr class="head">
+<th></th>
+<th>Name</th>
+<th>Artist</th>
+<th>Album</th>
+</tr>
+<tr>
+<th>1</th>
+<td>On My Bus</td>
+<td>Plone</td>
+<td>For Beginner Piano</td>
+</tr>
+<tr>
+<th>2</th>
+<td>California Rolls</td>
+<td>Tipper</td>
+<td>Surrounded</td>
+</tr>
+<tr>
+<th>3</th>
+<td>500 Fingernails</td>
+<td>Why?</td>
+<td>Sanddollars</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Sweetsmoke</td>
+<td>Mr. Scruff</td>
+<td>Trouser Jazz</td>
+</tr>
+<tr>
+<th>5</th>
+<td>Madre, Mother &#038; Mere</td>
+<td>Lucien-N-Luciano</td>
+<td>Blind Behavior</td>
+</tr>
+<tr>
+<th>6</th>
+<td>DVNO</td>
+<td>Justice</td>
+<td></td>
+</tr>
+<tr>
+<th>7</th>
+<td>Supernature</td>
+<td>Bob Sinclair</td>
+<td></td>
+</tr>
+<tr>
+<th>8</th>
+<td>2 after 909</td>
+<td>Justus Kohncke</td>
+<td></td>
+</tr>
+<tr>
+<th>9</th>
+<td>Use Me</td>
+<td>WUZ</td>
+<td>WUZ</td>
+</tr>
+<tr>
+<th>10</th>
+<td>On My Own</td>
+<td>Ulrich Schnauss</td>
+<td>A Strangely Isolated Place</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Human Condition</td>
+<td>Tycho</td>
+<td>The Science of Patterns</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Lohn &#038; Brot</td>
+<td>Efdemin</td>
+<td>Efdemin</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Autrefois</td>
+<td>Pink Martini</td>
+<td>Hang on Little Tomato</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Summer Sun (feat. Yukimi Nagano)</td>
+<td>Koop</td>
+<td>Waltz for Koop</td>
+</tr>
+<tr>
+<th>15</th>
+<td>We&#8217;re In Love</td>
+<td>Herbert</td>
+<td>Scales</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Limelight</td>
+<td>Apparat</td>
+<td>Walls</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Lost Signal</td>
+<td>Kasper Bjorke</td>
+<td>In Gumbo</td>
+</tr>
+<tr>
+<th>18</th>
+<td>If I Ever Feel Better</td>
+<td>Phoenix</td>
+<td>United</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Brokenhearted</td>
+<td>Lexicon</td>
+<td>Youth is Yours</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Girl Thing ft. Safi</td>
+<td>A1 Bassline</td>
+<td></td>
+</tr>
+<tr>
+<th>21</th>
+<td>Tipologia</td>
+<td>Gui Boratto</td>
+<td></td>
+</tr>
+<tr>
+<th>22</th>
+<td>Mound (Fully Conscious Mix)</td>
+<td>KONE</td>
+<td></td>
+</tr>
+<tr>
+<th>23</th>
+<td>Run Into Flowers</td>
+<td>M83</td>
+<td>Dead Cities, Red Seas &#038; Lost Ghosts</td>
+</tr>
+</table>
+
+<p>[audio:radio-archives/2008-03-04-5pm.mp3]
+<a href="http://media.blipbloop.net/audio/radio-archives/2008-03-04-5pm.mp3">2008-03-04 5pm</a></p>
+
+<p>[audio:radio-archives/2008-03-04-6pm.mp3]
+<a href="http://media.blipbloop.net/audio/radio-archives/2008-03-04-6pm.mp3">2008-03-04 6pm</a></p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 4, 2008</abbr></li>
+    <li class="comments"><a href="/rainydawg-radio-season-3-show-8/#respond" title="Comment on Rainydawg Radio, Season 3, Show 8">0 comments</a></li>
+    <li class="tags">Tagged </li>
+  </ul>
+</div>
+    </div>
+    </div>
+
+	<div class="navigation navigationbottom">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	
+	
+    </div>
+  </div>
+
+	<div id="sidebar">
+  <ul class="nav">
+    <li><a href="/">Journal</a></li>
+    <li><a href="/topics/mixtapes">Mixtapes</a></li>
+    <li><a href="/archives">Archives</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</div>  
+</div>
+</div>
+
+<!-- for soundmanager -->
+<div id="control-template">
+  <div class="controls">
+    <div class="statusbar">
+      <div class="loading"></div>
+      <div class="position"></div>
+    </div>
+  </div>
+  <div class="timing">
+    <div id="sm2_timing" class="timing-data">
+      <span class="sm2_position">%s1</span> / <span class="sm2_total">%s2</span>
+    </div>
+  </div>
+</div>
+<div id="spectrum-container" class="spectrum-container">
+  <div class="spectrum-box">
+    <div class="spectrum"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f17425ef5a1f53d53000007');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

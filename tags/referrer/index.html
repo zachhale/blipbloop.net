@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>  referrer - Blip Bloop</title>
+	<meta name="generator" content="WordPress 3.4.2" />
+	<meta name="robots" content="all" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/main.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/page-player.css" media="screen" />
+  <link rel="alternate" type="application/atom+xml" title="Everything Feed" href="http://feeds.feedburner.com/blipbloop" />
+  <link rel="alternate" type="application/atom+xml" title="Just Mixtapes Feed"  href="http://feeds.feedburner.com/blipbloop/mixtapes" />
+	<link rel="pingback" href="/xmlrpc.php" />
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/soundmanager2.js" type="text/javascript"></script>
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/page-player.js" type="text/javascript"></script>
+		<link rel='archives' title='December 2012' href='/2012/12/' />
+	<link rel='archives' title='November 2011' href='/2011/11/' />
+	<link rel='archives' title='March 2011' href='/2011/03/' />
+	<link rel='archives' title='October 2009' href='/2009/10/' />
+	<link rel='archives' title='July 2009' href='/2009/07/' />
+	<link rel='archives' title='October 2008' href='/2008/10/' />
+	<link rel='archives' title='April 2008' href='/2008/04/' />
+	<link rel='archives' title='March 2008' href='/2008/03/' />
+	<link rel='archives' title='February 2008' href='/2008/02/' />
+	<link rel='archives' title='January 2008' href='/2008/01/' />
+	<link rel='archives' title='December 2007' href='/2007/12/' />
+	<link rel='archives' title='November 2007' href='/2007/11/' />
+	<link rel='archives' title='October 2007' href='/2007/10/' />
+	<link rel='archives' title='September 2007' href='/2007/09/' />
+	<link rel='archives' title='June 2007' href='/2007/06/' />
+	<link rel='archives' title='May 2007' href='/2007/05/' />
+	<link rel='archives' title='April 2007' href='/2007/04/' />
+	<link rel='archives' title='March 2007' href='/2007/03/' />
+	<link rel='archives' title='February 2007' href='/2007/02/' />
+	<link rel='archives' title='September 2006' href='/2006/09/' />
+	<link rel='archives' title='August 2006' href='/2006/08/' />
+	<link rel='archives' title='May 2006' href='/2006/05/' />
+	<link rel='archives' title='April 2006' href='/2006/04/' />
+	<link rel="alternate" type="application/rss+xml" title="Blip Bloop &raquo; referrer Tag Feed" href="/tags/referrer/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.2" />
+</head>
+<body>
+<div class="omnomnom">
+<div class="wrap">
+	<div id="main">
+		<div id="header">
+      <p id="site_title"><a href="/">Blip Bloop</a></p>
+      <p id="site_desc">By Zach Hale</p>
+    </div>
+  
+    <div id="content">
+	
+
+
+			<p class="archivetitle">Posts Tagged &#8216;referrer&#8217;</p>
+			
+	<div class="navigation navigationtop">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	
+  <div class="hfeed">
+      <div class="post post-102 hentry">
+      <h2 class="entry-title"><a href="/referrer-links-and-anonymity-in-private-web-spaces/" rel="bookmark">Referrer links and anonymity in private web spaces</a></h2>
+<div class="entrybody entry-content">
+  <p>Several times now I have revisited my current setup for personal information management and whether or not I am comfortable storing private personal hyperlinks on the web. My concern with using online services is that when I store hyperlinks on wikis, messages, emails, etc. and click, the other site will see me in their referrer logs.</p>
+
+<p>This isn&#8217;t an issue for most webmail services like Gmail because it is normal for these services to obfuscate urls beyond recognition making it impossible to identify any referrers. You see urls full of hashes and hard to recognize identifiers that are meaningless to anything but the application itself. I doubt keeping urls unidentifiable like that was a <em>primary</em> concern in the design of webmail systems but it does provide this obvious advantage.</p>
+
+<p>The concern I have is with services like Backpack, Basecamp, or any hosted blog or wiki where you have a unique and easily identifiable url associated with your data. On hosted sites like the aforementioned Backpack and Basecamp, your account is identified by a chosen subdomain which is <em>very likely</em> easily identifiable to you personally or to your company/organization. For example, Startup Weekend uses the domain &#8220;startupweekend.grouphub.com&#8221; &#8212; obviously identifiable. On a personal domain like say for example &#8220;zachhale.com&#8221; if I were to set up a private wiki at &#8220;wiki.zachhale.com&#8221; and do everything necessary to protect it with a robots.txt and require http authentication, if I put create a link and click on it referring to another site they will see where I came from. Even if your domain name isn&#8217;t identifiable by name to you, there is still whois information that can be dug up and tracked back to you.</p>
+
+<p>I&#8217;d rather not let people know what I&#8217;m doing in those private spaces. Maybe I have a list of blogs I admire and visit frequently or maybe it&#8217;s a corporate information system with links to competitors sites. In many cases I would rather not send information to those people identifying my visits with me or my company.</p>
+
+<p>There are a few solutions that I can easily see:</p>
+
+<ul>
+<li>obfuscate your urls and use a domain that can&#8217;t be tracked back to you, or</li>
+<li>use some sort of proxy that will spoof or remove any referrer information from your requests.</li>
+</ul>
+
+<p>Obfuscating completely is difficult to do and often nearly impossible to do, so the only other reasonable solution now is to set up some proxy. In researching it looks like there are <a href="http://en.wikipedia.org/wiki/Referer_spoofing">a number of client browser extensions/plugins</a> for spoofing referrers, but any client side hack is tedious to enforce, especially across a large organization or with multiple platforms in the mix. The other option is to manually redirect traffic through another domain, preferably not owned by you. I found one service called <a href="http://referhide.com/">referhide.com</a> that provides this solution. Otherwise, it wouldn&#8217;t be too hard to set up a redirection script either with javascript or through passing parameters through the url. Either way, though, you now have to either manually or programatically change all your links to go through that intermediary service &#8212; sounds like a pain.</p>
+
+<p>What I&#8217;d like to see is something similar to robots.txt but for referrer links. It would be impossible to enforce by strictly trusting web servers to do the ignoring since people could choose to ignore such a file without question. The only real solution I could see is standardizing this into web browsers so you could trust that anybody using a compatible web browser would know that their referrer traffic is being properly dealt with and anonymity is preserved.</p>
+
+<p>Any ideas? Am I missing something major here?</p>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">March 29, 2008</abbr></li>
+    <li class="comments"><a href="/referrer-links-and-anonymity-in-private-web-spaces/#comments" title="Comment on Referrer links and anonymity in private web spaces">2 comments</a></li>
+    <li class="tags">Tagged <a href="/tags/anonymity/" rel="tag">anonymity</a> <a href="/tags/privacy/" rel="tag">privacy</a> <a href="/tags/referrer/" rel="tag">referrer</a> <a href="/tags/spoofing/" rel="tag">spoofing</a></li>
+  </ul>
+</div>
+    </div>
+    </div>
+
+	<div class="navigation navigationbottom">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	
+	
+    </div>
+  </div>
+
+	<div id="sidebar">
+  <ul class="nav">
+    <li><a href="/">Journal</a></li>
+    <li><a href="/topics/mixtapes">Mixtapes</a></li>
+    <li><a href="/archives">Archives</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</div>  
+</div>
+</div>
+
+<!-- for soundmanager -->
+<div id="control-template">
+  <div class="controls">
+    <div class="statusbar">
+      <div class="loading"></div>
+      <div class="position"></div>
+    </div>
+  </div>
+  <div class="timing">
+    <div id="sm2_timing" class="timing-data">
+      <span class="sm2_position">%s1</span> / <span class="sm2_total">%s2</span>
+    </div>
+  </div>
+</div>
+<div id="spectrum-container" class="spectrum-container">
+  <div class="spectrum-box">
+    <div class="spectrum"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f17425ef5a1f53d53000007');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

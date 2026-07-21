@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>  Query WordPress posts excluding a category - Blip Bloop</title>
+	<meta name="generator" content="WordPress 2.7.1" />
+	<meta name="robots" content="all" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/main.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/blipbloop/stylesheets/page-player.css" media="screen" />
+  <link rel="alternate" type="application/atom+xml" title="Everything Feed" href="http://feeds.feedburner.com/blipbloop" />
+  <link rel="alternate" type="application/atom+xml" title="Just Mixtapes Feed"  href="http://feeds.feedburner.com/blipbloop/mixtapes" />
+	<link rel="pingback" href="/xmlrpc.php" />
+  <script src="http://mint.blipbloop.net/mint/?js" type="text/javascript"></script>
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/soundmanager2.js" type="text/javascript"></script>
+  <script src="/wp-content/themes/blipbloop/javascripts/soundmanager2/page-player.js" type="text/javascript"></script>
+		<link rel='archives' title='October 2008' href='/2008/10/' />
+	<link rel='archives' title='April 2008' href='/2008/04/' />
+	<link rel='archives' title='March 2008' href='/2008/03/' />
+	<link rel='archives' title='February 2008' href='/2008/02/' />
+	<link rel='archives' title='January 2008' href='/2008/01/' />
+	<link rel='archives' title='December 2007' href='/2007/12/' />
+	<link rel='archives' title='November 2007' href='/2007/11/' />
+	<link rel='archives' title='October 2007' href='/2007/10/' />
+	<link rel='archives' title='September 2007' href='/2007/09/' />
+	<link rel='archives' title='June 2007' href='/2007/06/' />
+	<link rel='archives' title='May 2007' href='/2007/05/' />
+	<link rel='archives' title='April 2007' href='/2007/04/' />
+	<link rel='archives' title='March 2007' href='/2007/03/' />
+	<link rel='archives' title='February 2007' href='/2007/02/' />
+	<link rel='archives' title='September 2006' href='/2006/09/' />
+	<link rel='archives' title='August 2006' href='/2006/08/' />
+	<link rel='archives' title='May 2006' href='/2006/05/' />
+	<link rel='archives' title='April 2006' href='/2006/04/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.2.6'></script>
+<script type='text/javascript' src='/wp-content/plugins/openid/f/jquery.textnode.min.js?ver=518'></script>
+<script type='text/javascript' src='/wp-content/plugins/openid/f/jquery.xpath.min.js?ver=518'></script>
+<script type='text/javascript' src='/wp-content/plugins/openid/f/openid.min.js?ver=518'></script>
+<meta name="generator" content="WordPress 2.7.1" />
+
+
+		<link rel="stylesheet" type="text/css" href="/wp-content/plugins/openid/f/openid.min.css?ver=518" />	
+</head>
+<body>
+<div class="omnomnom">
+<div class="wrap">
+	<div id="main">
+		<div id="header">
+      <p id="site_title"><a href="/">Blip Bloop</a></p>
+      <p id="site_desc">By Zach Hale</p>
+    </div>
+  
+    <div id="content">
+	
+
+  
+  <div class="post post-48 hentry">
+    <h2 class="entry-title"><a href="/2007/10/query-wordpress-posts-excluding-a-category/" rel="bookmark">Query WordPress posts excluding a category</a></h2>
+<div class="entrybody entry-content">
+  <p>I just spent a while trying to figure this one out so I figured I&#8217;d post my code for my solution. The problem was trying to loop through and show my most recent articles excluding the asides in my individual pages&#8217; sidebar. I played with <code>get_posts()</code> and kept failing. I did it with the help of one of <a href="http://codex.wordpress.org/The_Loop#Loop_Examples_2">The Loop examples</a> on the WordPress forums.</p>
+
+<p>This code loops through the most recent 10 posts excluding my asides category and does a simple output for the sidebar.</p>
+
+<pre class="prettyprint">
+<code>
+<?php
+$my_query = new WP_Query('showposts=10&#038;cat=-38');
+while ($my_query->have_posts()) : $my_query->the_post();
+?>
+    <li><a href="<?php&#038;phpMyAdmin=acd6c1b2a90ba5bee870e6590aa02278 the_permalink(); ?>"><?php the_title(); ?></a><br/>
+    <?php the_time('F j, Y'); ?></li>
+<?php endwhile; ?>
+</code>
+</pre>
+</div>
+<div class="meta">
+  <ul>
+    <li class="date">Posted on<br/><abbr class="published" title="">October 8, 2007</abbr></li>
+    <li class="comments"></li>
+    <li class="tags">Tagged <a href="/tag/code/" rel="tag">code</a> <a href="/tag/example/" rel="tag">example</a> <a href="/tag/wordpress/" rel="tag">wordpress</a></li>
+  </ul>
+</div>
+	</div>
+				
+	<div class="comments-area">
+    
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+
+<h3 id="respond">Reply</h3>
+
+
+<form action="/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><small><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> or basic HTML allowed: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="48" />
+</p>
+    <script type="text/javascript">
+	//<![CDATA[
+    function yus_replyTo(commentID,author) {
+		var inReplyTo='@<a href="#comment-'+commentID+'">'+author+'<\/a>: ';
+    	var myField;
+        if (document.getElementById('comment') && document.getElementById('comment').type == 'textarea') {
+    		myField = document.getElementById('comment');
+    	} else {
+    		return false;
+    	}
+    	if (document.selection) {
+    		myField.focus();
+    		sel = document.selection.createRange();
+    		sel.text = inReplyTo;
+    		myField.focus();
+    	}
+    	else if (myField.selectionStart || myField.selectionStart == '0') {
+    		var startPos = myField.selectionStart;
+    		var endPos = myField.selectionEnd;
+    		var cursorPos = endPos;
+    		myField.value = myField.value.substring(0, startPos)
+    					  + inReplyTo
+    					  + myField.value.substring(endPos, myField.value.length);
+    		cursorPos += inReplyTo.length;
+    		myField.focus();
+    		myField.selectionStart = cursorPos;
+    		myField.selectionEnd = cursorPos;
+    	}
+    	else {
+    		myField.value += inReplyTo;
+    		myField.focus();
+    	}
+   	}
+	//]]>
+    </script>
+
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+
+</form>
+
+
+  </div>
+  
+
+	
+    </div>
+  </div>
+
+	<div id="sidebar">
+  <ul class="nav">
+    <li><a href="/">Journal</a></li>
+    <li><a href="/category/mixtapes">Mixtapes</a></li>
+    <li><a href="/category/radio-archives">Radio</a></li>
+    <li><a href="/archives">Archives</a></li>
+    <li><a href="/about">About</a></li>
+    <!-- <li><a href="http://discuss.blipbloop.net/">&larr; Discuss</a></li> -->
+    <!-- <li><a href="http://glitchee.com/">&larr; Share</a></li> -->
+  </ul>
+</div>  
+</div>
+</div>
+
+<!-- for soundmanager -->
+<div id="control-template">
+  <div class="controls">
+    <div class="statusbar">
+      <div class="loading"></div>
+      <div class="position"></div>
+    </div>
+  </div>
+  <div class="timing">
+    <div id="sm2_timing" class="timing-data">
+      <span class="sm2_position">%s1</span> / <span class="sm2_total">%s2</span>
+    </div>
+  </div>
+</div>
+<div id="spectrum-container" class="spectrum-container">
+  <div class="spectrum-box">
+    <div class="spectrum"></div>
+  </div>
+</div>
+
+<script type="text/javascript">add_openid_to_comment_form()</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

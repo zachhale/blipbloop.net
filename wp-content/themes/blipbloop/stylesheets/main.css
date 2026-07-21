@@ -1,0 +1,462 @@
+/* basics */
+body {
+  font-size: 62.5%;
+  line-height: 1.4;
+  font-family: helvetica, arial, sans-serif;
+  background-color: #eee;
+  color: #111;
+  text-align: left;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+  p img {
+    padding: 0;
+    max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+small {
+  font-size: .9em; }
+
+acronym, abbr {
+  cursor: normal;
+  border-bottom: none; }
+
+span.caps {
+  cursor: help; }
+
+blockquote {
+  margin: 15px 30px 0 10px;
+  padding-left: 20px;
+  border-left: 5px solid #ddd; }
+  blockquote cite {
+    margin: 5px 0 0;
+    display: block; }
+
+hr {
+  display: none; }
+
+label {
+  margin-left: 1em; }
+
+input, textarea {
+  padding: 2px;
+  border-collapse: collapse;
+  font: normal 11px verdana, helvetica, arial, sans-serif; }
+  
+textarea {
+  width: 44.5em; }
+
+select {
+  font: normal 11px verdana, helvetica, arial, sans-serif; }
+
+a {
+  color: #0000ff;
+  text-decoration: underline; }
+  a img {
+    border: none; }
+
+a:visited, a:active {
+  color: #0000ff;
+  text-decoration: underline; }
+
+a:hover {
+  color: #0000ff;
+  text-decoration: none; }
+
+/* structure */
+.omnomnom {
+  width: 100%;
+  position: relative;
+  clear: both;
+  float: left;
+  overflow: hidden;
+  background-color: #fff; }
+
+.wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+  color: black;
+  right: 76%;
+  background-image: url('../images/blue_stripes-vert.png');
+  background-position: top right; }
+
+#main {
+  width: 76%;
+  left: 100%;
+  float: left;
+  position: relative;
+  padding: 0 0 2em 0;
+  overflow: hidden; }
+  
+/* header */
+#main #header {
+  width: 65em;
+  padding: 0 0 0 2em;
+  overflow: hidden;
+  border-bottom: 4px solid #000; }
+  #main #header p#site_title {
+    margin: 1.5em 0 0 -.2em;
+    padding: 0; }
+    #main #header p#site_title a {
+      font-size: 5em;
+      font-family: helvetica, arial, sans-serif;
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000; }
+  #main #header p#site_desc {
+    margin: 0 0 1.5em 0;
+    padding: 0;
+    font-size: 1.6em; }
+    
+/* content */
+#main #content {
+  width: 65em;
+  padding: 0 0 0 2em; }
+  
+  /* basic styles */
+  #main #content h1 {
+    font-size: 2.0em;
+    margin: .83em 0; }
+    #main #content h1 a {
+      color: #000; }
+  #main #content h2 {
+    color: #000;
+    padding: 0;
+    font-size: 1.8em;
+    margin: 1.11em 0; }
+    #main #content h2 a {
+      color: #000; }
+  #main #content h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 1em;
+    margin-top: .5em; }
+  #main #content h4, #main #content h5 {
+    color: #333333;
+    font-size: 1.3em; }
+  #main #content p {
+    padding: 0px;
+    margin-top: 0.83em;
+    margin-bottom: .83em;
+    margin-right: 0px;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: Georgia, serif; }
+  #main #content ul, #main #content ol {
+    margin-left: 0;
+    padding-left: 1.7em;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: Georgia, serif; }
+    #main #content ul li,       #main #content ol li {
+      padding-left: .3em; }
+  #main #content table {
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: Georgia, serif; }
+    #main #content table.playlist {
+      margin-top: 1em; }
+      #main #content table.playlist tr th, #main #content table.playlist tr td {
+        padding-right: 5px;
+        border-top: 1px solid #eee; }
+      #main #content table.playlist tr.head th {
+        border-top: none; }
+  #main #content strong {
+    color: #333333; }
+  #main #content a {
+    color: #2f6576;
+    text-decoration: none; }
+    #main #content a:hover {
+      color: #518798;
+      text-decoration: underline; }
+  #main #content small a, #main #content label a {
+    text-decoration: underline; }
+  #main #content img {
+    border: solid 1px black; }
+    
+  /* posts and pages */
+  #main #content div.post {
+    overflow: hidden;
+    margin-bottom: 2em; }
+    #main #content div.post h2 {
+      float: left;
+      font-size: 2.0em;
+      margin: .83em 0 0 0; }
+    #main #content div.post h3 {
+      font-size: 1.6em;
+      margin: 1.11em 0; }
+    #main #content div.post h4, #main #content div.post h5 {
+      font-size: 1.3em; }
+  #main #content div.entrybody {
+    width: 50em;
+    float: left;
+    clear: left; }
+  #main #content div.meta {
+    width: 13em;
+    float: left;
+    padding: 1em 0 0 0;
+    margin: 0 0 0 2em;
+    background-color: #fff; }
+    #main #content div.meta p {
+      font-size: 1.2em;
+      line-height: 1.4; }
+  #main #content div.page {
+    overflow: hidden; }
+  #main #content .meta ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    font-size: 1.2em; }
+    #main #content .meta ul li {
+      list-style: none; }
+      #main #content .meta ul li.tags {
+        display: none; }
+  #main #content .meta p {
+    color: #888; }
+  #main #content .meta a {
+    color: #777;
+    border-bottom: dotted 1px #bbbbbb; }
+    #main #content .meta a:hover {
+      text-decoration: none; }
+      
+  /* comments */
+  #main #content div.comments-area {
+    overflow: hidden; }
+  #main #content div.comments-area h2 {
+    font-size: 2.4em;
+    margin: .83em 0 0 0; }
+  #main #content div.comments-area h2 {
+    font-size: 1.8em;
+    margin: 1.11em 0; }
+  #main #content h2#comments {
+    margin-top: 0;
+    padding-top: 0; }
+  #main #content ol.commentlist {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 1em; }
+    #main #content ol.commentlist li {
+      overflow: hidden;
+      margin: 0 0 2em 0;
+      padding: 0; }
+      #main #content ol.commentlist li div {
+        display: block;
+        overflow: hidden; }
+        #main #content ol.commentlist li div.commentauthor {
+          width: 50em;
+          float: left;
+          clear: left;
+          overflow: hidden;
+          font-family: Helvetica, Arial, sans-serif; }
+          #main #content ol.commentlist li div.commentauthor div.avatar {
+            float: left; }
+          #main #content ol.commentlist li div.commentauthor div.name {
+            font-size: 1.6em;
+            float :left;
+            padding-left: .5em;
+            font-weight: bold; }
+        #main #content ol.commentlist li div.commentbody {
+          width: 50em;
+          float: left;
+          clear: left; }
+          #main #content ol.commentlist li div.commentbody p {
+            font-size: 1.3em; }
+        #main #content ol.commentlist li div.commentmeta {
+          width: 13em;
+          float: right;
+          padding: 0;
+          margin: 0 0 0 2em; }
+          #main #content ol.commentlist li div.commentmeta p {
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0; }  
+          #main #content ol.commentlist li div.commentmeta p.yus_reply {
+            margin-top: .5em; }
+          #main #content ol.commentlist li div.commentmeta .yus_reply img {
+            padding: 0 0 0 0; 
+            margin: 0 0 -2px 0; 
+            border: none; }
+  #new_comment textarea, #edit_comment textarea {
+    height: 150px; }
+  
+/* footer */
+#main #footer {
+  width: 65em;
+  margin: 3.5em 0 0 2em;
+  padding: 0;
+  font-family: Georgia, serif; }
+  #main #footer p {
+    font-size: 1.3em;
+    line-height: 1.5; }
+
+/* sidebar */
+#sidebar {
+  width: 24%;
+  left: 0%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  #sidebar ul.nav {
+    margin: 0 0 0 0;
+    padding: 2.5em 2em 2em 0;
+    list-style: none;
+    float: right; }
+    #sidebar ul.nav li {
+      margin: 0;
+      padding: 0 0 0 0;
+      float: right;
+      clear: right; }
+      #sidebar ul.nav li a {
+        display: block;
+        padding: .56em 1.67em;
+        font-size: 1.8em;
+        text-transform: lowercase;
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        width: 5.56em;
+        text-align: right; }
+        #sidebar ul.nav li a:hover {
+          background-image: url('../images/nav-transparency.png');
+          color: #fff; }
+      #sidebar ul.nav li.selected a {
+        background-color: #000; }
+        #sidebar ul.nav li.selected a:hover {
+          background-image: none;
+          background-color: #000; }
+
+/* playlist */
+#main #content ul.playlist {
+  list-style-type: none;
+  margin: 1em 0 0 0;
+  padding: .25em .25em 0 .25em;
+  background-color: #cfe0b7;
+  border: 1px solid #555;
+  overflow: hidden; }
+  #main #content ul.playlist li {
+    position: relative;
+    display: block;
+    width: auto;
+    font-size: 1.2em;
+    line-height: 1em;
+    padding: .25em;
+    margin: 0 0 .25em 0;
+    border: none;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    #main #content ul.playlist li a {
+      display: block;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1em;
+      color: #333;
+      position: relative;
+      outline: none;
+      z-index: 2;
+      padding: 1px 0 0 20px;
+      background-image: url('../images/soft-play-transparent-light.png');
+      background-position: 0 1px;
+      background-repeat: no-repeat; }
+    #main #content ul.playlist li.sm2_playing {
+      color: #555;
+      background-color: #cfe0b7; }
+      #main #content ul.playlist li.sm2_playing:hover a.sm2_link {
+        color: #555; }
+      #main #content ul.playlist li.sm2_playing .controls {
+        position: relative;
+        display: block; }
+      #main #content ul.playlist li.sm2_playing a.sm2_link {
+        margin-right: 4.5em;
+        background-image: url('../images/soft-pause-transparent-light.png'); }
+      #main #content ul.playlist li.sm2_playing .timing {
+        display: block; }
+    #main #content ul.playlist li:hover {
+      background-color: #becfa6; }
+      #main #content ul.playlist li:hover .controls .statusbar {
+        position: relative;
+        cursor: pointer; }
+      #main #content ul.playlist li:hover .timing {
+        z-index: 2; }
+    #main #content ul.playlist li.sm2_paused {
+      background-color: #cfe0b7; }
+      #main #content ul.playlist li.sm2_paused:hover a.sm2_link {
+        color: #555; }
+      #main #content ul.playlist li.sm2_paused .controls {
+        background-color: #666; }
+        #main #content ul.playlist li.sm2_paused .controls .statusbar {
+          background-color: #ccc; }
+          #main #content ul.playlist li.sm2_paused .controls .statusbar .position {
+            background-color: #666;
+            border-color: #666; }
+      #main #content ul.playlist li.sm2_paused .timing {
+        background-color: #888;
+        border: 1px solid #ccc; }
+        #main #content ul.playlist li.sm2_paused .timing .sm2_position {
+          text-decoration: blink; }
+      #main #content ul.playlist li.sm2_paused a.sm2_link .metadata {
+        display: inline; }
+    #main #content ul.playlist li .controls {
+      display: none;
+      position: relative;
+      margin-top: 0.25em;
+      padding-left: 20px; }
+      #main #content ul.playlist li .controls .statusbar {
+        position: relative;
+        height: 0.5em;
+        background-color: #999;
+        overflow: hidden; }
+        #main #content ul.playlist li .controls .statusbar .position {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          height: 0.5em;
+          background-color: #333;
+          width: 0px; }
+        #main #content ul.playlist li .controls .statusbar .loading {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: .5em;
+          background-color: #777; }
+    #main #content ul.playlist li .timing {
+      position: absolute;
+      display: none;
+      text-align: right;
+      right: .4em;
+      top: .5em;
+      width: auto;
+      font: 80% normal "lucida console",monaco,courier,terminal,system; }
+      #main #content ul.playlist li .timing div.sm2_timing {
+        margin: 0;
+        padding: 0; }
+    #main #content ul.playlist li .sm2_divider {
+      font-size: 0.75em; }
+    #main #content ul.playlist li .sm2_metadata {
+      font-size: 0.65em; }
+
+  #control-template {
+    display: none; }
