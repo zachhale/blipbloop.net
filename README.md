@@ -7,5 +7,6 @@ retired in 2024 with no surviving backup. This copy was reconstructed in July
 2026 from the Internet Archive's Wayback Machine (latest good capture of each
 page) and is served via GitHub Pages.
 
-Note: files under `/audio/` (mixtapes, radio archives) were already missing
-from the live site and were never archived; those links remain broken.
+Audio (mixtapes, radio archives) is served from the `media.blipbloop.net` S3
+bucket, referenced as `https://s3.amazonaws.com/media.blipbloop.net/...` so it
+loads over HTTPS.

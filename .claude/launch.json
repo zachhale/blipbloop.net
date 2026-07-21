@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "blipbloop-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8377", "-d", "/Users/zachhale/code/blipbloop.net"],
+      "port": 8377
+    }
+  ]
+}
